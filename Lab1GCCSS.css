@@ -1,0 +1,58 @@
+/* @font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    /* src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+       /*  url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         /*url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         /*url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         /*url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  /*} */
+
+body {
+    background-color: #f9fafc;
+
+    font-family: 'Open Sans', sans-serif /*"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif*/;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1;
+  }
+  
+
+
+ h1 {
+    color: #000;
+    margin-left: 20px;
+ }
+    p {
+    color: #69696a;
+    
+      }
+div {
+    border-style: none none none double;
+}
+                
+button {
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+    width: 100%
+    }
+    
+
+
+   /* @font-face {
+        font-family: ;
+        src: url();
+    } */
+
+
+
+    
+
+   //* body {
+        font-family: "Open Sans" "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1; */
+
+        
