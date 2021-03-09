@@ -12,7 +12,10 @@ body {
     background-color: #f9fafc;
 
     font-family: 'Open Sans', sans-serif /*"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif*/;
-        font-weight: normal;
+    /*     sans-serif is a property for the Open Sans font. Sans serif means that the text will not have any free edges hanging off, compare this with how
+    Times-New Roman looks where it has little edges coming off each end of the line. You can see this by googling serif vs sans-serif fonts */
+        font-weight: normal; /*these two lines, font-weight and  font-style are redundant because the default is normal and you might want to add 
+    these more specifically to your classes or tags rather than the body. Depends on your usage but just something to look out for.*/
         font-style: normal;
         line-height: 1;
   }
