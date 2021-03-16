@@ -22,12 +22,36 @@ p {
 
 button {
   background-color: black;
-  color: white;
+   color: white;
   border-radius: 15px;
   width: 100%;
 }
+//wont show them on mobile
+.circle-small, .circle-medium, circle-large {
+  display: none;
+}
 
-.circle-large {
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+   #flex-container {
+    display: flex;
+  } 
+  button {
+  position: fixed;
+  bottom: 0; //your button will be at the bottom of the page 
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  body{
+    display: flex;
+  }
+  
+  //these should be only showing in the desktop view
+  .circle-large {
   background: rgba(247, 136, 167, 0.6);
   width: 250px;
   height: 250px;
@@ -50,16 +74,5 @@ button {
   position: right;
 }
 
-@media only screen and (min-width: 768px) {
-  .title {
-    font-size: 24px;
-  }
-   #flex-container {
-    display: flex;
-  } 
-  header{
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
