@@ -18,13 +18,15 @@ while (true) {
   
  // Math.floor(Math.random() * 10) + 1;  // returns a random integer from 1 to 10
  //document.getElementById("demo").innerHTML =
- var randomNumber = Math.floor(Math.random() * 10);
+ var randomNumber = Math.floor(Math.random() * 10) + 1; //you have to add 1 to the final number you get
+  //because Math.floor() generates a random number between 0 and 1, EXCLUSIVE of 1 so if its .9999 * 10
+  //then it takes the floor of that number your randomNumber will never hit 10. 
   if (randomNumber!==5) {
     counter++
-    console.log("randomNumber!==5")
+    console.log(`${randomNumber} !==5`) //you want to show the actual randomNumber you're getting so make the string a template literal
   }else{
     counter++
-    console.log(`randomNumber 5===5. It took ${counter}
+    console.log(`${randomNumber} 5===5. It took ${counter}
  iterations to randomly generate the number 5.`)
  break;
   }
