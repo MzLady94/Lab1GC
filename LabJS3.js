@@ -78,15 +78,15 @@ console.log(submissions)
 
 // FIND LOWEST SCORE
 function findLowestScore(array) {
-  let lowestNumber = 999; 
-
+  let lowestScore = array[0]; //better to start with a real value and the first item in the array is the best
+//plus you want to return the whole object, not just the score
   array.forEach(object => {
-    if(object.score < lowestNumber) {
-      lowestNumber = object.score
+    if(object.score < lowestScore.score) {
+      lowestScore = object
     }
   })
 
-  console.log(lowestNumber)
+  console.log(lowestScore)
 }
 findLowestScore(submissions)
 
@@ -100,7 +100,8 @@ findLowestScore(submissions)
     }
 
     let average = total / array.length
-    console.log(average)
+    return average //important to pay attention to when the instructions say console log and return,
+    //theres a BIG difference in what you get back from the function.
   }
 
 findAverageScore(submissions)
@@ -117,19 +118,22 @@ console.log(submissions)
 
 // DELETE SUBMISSION BY NAME
 function deleteSubmissionByName (array, name) {
-
+//I think creating a function inside this function is overcomplicating things 
+  nameIndex = array.findIndex((item) => item.name === name);
+  array.splice(nameIndex, 1);
   
-  function findPerson(name) {
-    array.forEach(object => {
-      if( object.name === name) {
-        console.log(name)
-      }
-    })
-  }
+  
+//   function findPerson(name) {
+//     array.forEach(object => {
+//       if( object.name === name) {
+//         console.log(name)
+//       }
+//     })
+//   }
 
-  findPerson(name)
-  let index = array.findIndex(findPerson)  
-    array.splice(index, 1) //confirm teacher
+//   findPerson(name)
+//   let index = array.findIndex(findPerson)  
+//     array.splice(index, 1) //confirm teacher
 }
 
   deleteSubmissionByName(submissions, 'Joe')
